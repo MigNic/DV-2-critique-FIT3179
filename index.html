@@ -97,7 +97,7 @@
   <div class="visualization-header">
     <h2>CLIMATE CHANGE IN YEAR 2023</h2>
     <p style="color: white;">
-      In 2023, Australia experienced notable climate variations, with extreme weather patterns affecting various
+      In 2025, Australia experienced notable climate variations, with extreme weather patterns affecting various
       regions.
       From heavy rainfall in some areas to prolonged dry spells in others, these shifts in weather patterns highlight
       the growing impact of climate change on the country's environment. This analysis provides a comprehensive view
@@ -174,50 +174,6 @@
 
   <hr>
 
-  <div class="container" id="min-max-container">
-    <div>
-      <p>
-        This graph illustrates the range between the minimum and maximum temperatures across Australia's cities,
-        highlighting the country's extreme weather patterns.
-        Use the dropdown menu to explore temperature variations
-        for different cities and gain insights into their unique climate conditions.
-      </p>
-      <div
-        style="display: flex; align-items: center; margin-top: 20px; margin-right: 20px; margin-left: 20px; padding: 30px;">
-        <select id="State-selection-legend" class="styled-select" style="margin-right: 30px;">
-          <option value="Adelaide">Adelaide</option>
-          <option value="Brisbane">Brisbane</option>
-          <option value="Canberra">Canberra</option>
-          <option value="Darwin">Darwin</option>
-          <option value="Hobart">Hobart</option>
-          <option value="Melbourne">Melbourne</option>
-          <option value="Perth">Perth</option>
-          <option value="Sydney">Sydney</option>
-        </select>
-        <div class="custom-legend"
-          style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-
-          <button id="reset-button" class="legend-button"
-            style="background-color: #82a482; color: white; border: none; padding: 10px 20px; margin: 5px 0; border-radius: 5px; cursor: pointer;">
-            Show All
-          </button>
-          <button id="min-button" class="legend-button"
-            style="background-color: #2577fa; color: white; border: none; padding: 10px 20px; margin: 5px 0; border-radius: 5px; cursor: pointer;">
-            Min Temperature
-          </button>
-          <button id="max-button" class="legend-button"
-            style="background-color: #f57749; color: white; border: none; padding: 10px 20px; margin: 5px 0; border-radius: 5px; cursor: pointer;">
-            Max Temperature
-          </button>
-        </div>
-
-      </div>
-    </div>
-    <div id="aus_min_max_temp" class="map-extreme"
-      style="margin-right: 10px ; background-color: #e9eef7; margin-left: 30px ;"></div>
-  </div>
-
-
   <div class="visualization-header">
     <h2>EXTREME EVENTS </h2>
     <p style="color: white;">
@@ -231,65 +187,10 @@
     </p>
   </div>
 
-  <!-- lowest layer -->
-
-  <div class="map_boxes">
-    <div id="aus_highest_temp" class="map"></div>
-    <div id="aus_lowest_temp" class="map"></div>
-    <div id="aus_highest_annual_rainfall" class="map"></div>
-  </div>
-
-  <div class="container">
-    <p style="margin-left: 40px;">
-      The graph below illustrates the extent of Australia and the selected State or
-      Territory that experienced extreme heat, cold, or rainfall on each chosen day of the year.
-      It shows the percentage of land area where temperature or rainfall records were either
-      broken or nearly broken on the selected day.
-    </p>
-
-    <!-- Title for the Legend directly above the Legend -->
-    <div style="margin-left: 40px;">
-      <h4 style="color: #333; margin: 0; 	font-size: 18px;">Extreme Weather Categories</h4>
-      <!-- Inline Legend -->
-      <div id="legend" class="legend">
-        <div class="legend-item">
-          <span class="legend-box" style="background-color: #d9d9b9;"></span> Lowest on record
-        </div>
-        <div class="legend-item">
-          <span class="legend-box" style="background-color: #e8dc55;"></span> Below 1st Percentile
-        </div>
-        <div class="legend-item">
-          <span class="legend-box" style="background-color: #655f36;"></span> Below 3rd Percentile
-        </div>
-        <div class="legend-item">
-          <span class="legend-box" style="background-color: #c8aabd;"></span> Above 97th Percentile
-        </div>
-        <div class="legend-item">
-          <span class="legend-box" style="background-color: #c94087;"></span> Above 99th Percentile
-        </div>
-        <div class="legend-item">
-          <span class="legend-box" style="background-color: #ce5f49;"></span> Highest on record
-        </div>
-      </div>
-      <label for="temp-selection">Categories:</label>
-
-      <select id="temp-selection">
-        <option value="">All</option>
-        <option value="Lowest">Lowest Percentile</option>
-        <option value="1st">1st Percentile</option>
-        <option value="3rd">3rd Percentile</option>
-        <option value="97th">97th Percentile</option>
-        <option value="99th">99th Percentile</option>
-        <option value="Highest">Highest Percentile</option>
-      </select>
-    </div>
-
   </div>
 
   <div id="aus_extreme_temp" class="map-extreme"></div>
-
-  <div class="author">
-    <p><strong>Author:</strong> Ethel Lim Jia Yee</p>
+  
     <p><strong>Datasets:</strong> 
       <a href="https://www.abcb.gov.au/resources/climate-zone-map">Climate Zone</a>
       <a href="http://www.bom.gov.au/climate/australia/cities/">Australia City Temperature</a>
